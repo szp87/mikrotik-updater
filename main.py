@@ -40,7 +40,3 @@ schedule.every().monday.at("03:00").do(run)
 loguj('system', "Scheduler uruchomiony - sprawdzanie co poniedzialek o 03:00")
 
 run()  # uruchom od razu przy starcie
-
-while True:
-    schedule.run_pending()
-    time.sleep(60)
